@@ -24,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pixel_strip_node = rpi_ws281x_ros.pixel_strip_node:main'
+            'pixel_strip_node = rpi_ws281x_ros.pixel_strip_node:main',
+            'spi_strip_node = rpi_ws281x_ros.spi_strip_node:main'
         ],
     },
 )
