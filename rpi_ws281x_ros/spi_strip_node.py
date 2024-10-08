@@ -64,7 +64,7 @@ class PixelStripNode(Node):
     def set_pixels_callback(self, msg):
         for i, pixel_color in enumerate(msg.pixel_colors):
             r, g, b = int(pixel_color.r), int(pixel_color.g), int(pixel_color.b)
-            self.pixels[i] = (r, g, b)
+            self.pixels[i] = (g, r, b)
 
         self.pixels.show()
 
